@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f6ff" />
+    <meta name="description" content="ตลาดรวมงานออกแบบ UX/UI, Web Design และไอเดียด้าน IT จากนักสร้างสรรค์อิสระ" />
+    <title>Madeby — ตลาดงานดีไซน์และไอเดีย IT</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">ข้ามไปยังเนื้อหา</a>
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a class="brand" href="#top" aria-label="Madeby หน้าแรก">
+          <span class="brand-mark" aria-hidden="true"><i></i><b></b><em></em></span>
+          <span class="brand-name">madeby<span>.</span></span>
+        </a>
+        <nav class="main-nav" aria-label="เมนูหลัก">
+          <a href="#explore">สำรวจผลงาน</a>
+          <a href="#categories">หมวดหมู่</a>
+          <a href="#how-it-works">วิธีใช้งาน</a>
+        </nav>
+        <div class="header-actions">
+          <button class="header-tool" id="cart-button" type="button" aria-label="เปิดตะกร้า">
+            <span aria-hidden="true">▱</span><span class="cart-count" id="cart-count">0</span>
+          </button>
+          <button class="login-link" id="account-button" type="button" aria-label="เปิดบัญชีและจัดการร้านค้า"><span class="account-full">บัญชี / ร้านค้า</span><span class="account-short">บัญชี</span></button>
+          <button class="button button-small button-primary" type="button" data-open-seller>เริ่มขายงาน <span aria-hidden="true">↗</span></button>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div class="hero-inner shell">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> DIGITAL GOODS MARKETPLACE</div>
+            <h1>ไอเดียดี ๆ<br />ควรได้ไปต่อ <span>ให้ไกล</span></h1>
+            <p class="hero-description">พื้นที่สำหรับคนทำ UX/UI, Web Design และสาย IT<br class="desktop-break" /> ที่อยากแบ่งปันผลงานให้คนอื่นนำไปใช้ต่อได้จริง</p>
+            <div class="hero-actions">
+              <a class="button button-primary button-large" href="#explore">เลือกดูผลงาน <span aria-hidden="true">→</span></a>
+              <button class="button button-quiet button-large" type="button" data-open-seller><span class="sparkle" aria-hidden="true">✳</span> ฉันอยากขายงาน</button>
+            </div>
+            <div class="hero-note"><span class="note-avatar" aria-hidden="true">✦</span><span>เทมเพลต · UI kit · ไอเดียโปรเจกต์ <b>ในที่เดียว</b></span></div>
+          </div>
+
+          <div class="hero-art" aria-label="ภาพตัวอย่างสินค้าและหน้าร้านบน Madeby">
+            <div class="orbit orbit-large" aria-hidden="true"></div>
+            <div class="orbit orbit-small" aria-hidden="true"></div>
+            <div class="hero-sticker sticker-top"><span class="sticker-icon">✳</span><span>Made for<br /><b>what's next</b></span></div>
+            <div class="showcase-window">
+              <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>madeby.market / studio</span><span class="window-lock">⌑</span></div>
+              <div class="showcase-layout">
+                <aside class="showcase-side"><div class="mini-logo">m.</div><span class="side-line active"></span><span class="side-line"></span><span class="side-line short"></span><span class="side-spacer"></span><span class="side-circle"></span></aside>
+                <div class="showcase-main">
+                  <div class="showcase-topline"><span>FEATURED DROP / 024</span><span>01—06</span></div>
+                  <div class="showcase-title">Good design<br /><em>moves ideas.</em></div>
+                  <div class="showcase-tiles">
+                    <div class="tile tile-ui"><span class="tile-index">01 / UI KIT</span><div class="tile-ui-card"><i></i><i></i><i></i><b></b></div><span>Studio Flow</span></div>
+                    <div class="tile tile-web"><span class="tile-index">02 / WEB</span><div class="tile-web-shape"><b></b><i></i><em></em></div><span>Soft Spaces</span></div>
+                  </div>
+                  <div class="showcase-footer"><span>CURATED BY CREATORS</span><span class="footer-arrow">↗</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-tag tag-left"><span class="tag-glyph">⌘</span><span><b>UI Kits</b><small>พร้อมนำไปใช้</small></span></div>
+            <div class="floating-tag tag-right"><span class="tag-glyph tag-glyph-mint">✳</span><span><b>New ideas</b><small>จากครีเอเตอร์</small></span></div>
+            <div class="hero-sticker sticker-bottom"><span class="sticker-star">✦</span><span>คิด · ทำ · แชร์</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-strip" id="categories" aria-labelledby="category-title">
+        <div class="shell category-inner">
+          <div class="section-kicker"><span class="kicker-line"></span><span>FIND YOUR NEXT STARTING POINT</span></div>
+          <div class="category-heading-row">
+            <div><h2 id="category-title">เริ่มจากสิ่งที่คุณกำลังมองหา</h2><p>เลือกหมวดที่ใช่ แล้วค้นพบงานที่ต่อยอดได้เลย</p></div>
+            <a class="text-link" href="#explore">ดูทุกหมวด <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="category-list" role="list" aria-label="หมวดหมู่ผลงาน">
+            <button class="category-chip active" type="button" data-filter="all" aria-pressed="true"><span>✦</span> ทั้งหมด</button>
+            <button class="category-chip" type="button" data-filter="uxui" aria-pressed="false"><span>▦</span> UX/UI Design</button>
+            <button class="category-chip" type="button" data-filter="web" aria-pressed="false"><span>◫</span> Web Design</button>
+            <button class="category-chip" type="button" data-filter="template" aria-pressed="false"><span>▤</span> Templates</button>
+            <button class="category-chip" type="button" data-filter="product" aria-pressed="false"><span>◈</span> Product & Startup</button>
+            <button class="category-chip" type="button" data-filter="idea" aria-pressed="false"><span>✧</span> Project Ideas</button>
+            <button class="category-chip" type="button" data-filter="dev" aria-pressed="false"><span>⌘</span> Dev Tools</button>
+            <button class="category-chip" type="button" data-filter="saved" aria-pressed="false"><span>♡</span> ที่บันทึก</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="discover-section shell" id="explore" aria-labelledby="discover-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker"><span class="kicker-line"></span><span>THE CREATOR SHELF</span></div>
+            <h2 id="discover-title">งานน่าสนใจ <span>คัดมาให้ดู</span></h2>
+            <p class="section-subtitle">ตัวอย่างผลงานจำลอง เพื่อให้เห็นภาพการเลือกซื้อและการนำไปต่อยอด</p>
+          </div>
+          <div class="listing-tools">
+            <label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="visually-hidden">ค้นหาผลงาน</span><input id="product-search" type="search" placeholder="ค้นหางานหรือไอเดีย..." autocomplete="off" /><kbd>⌕</kbd></label>
+            <label class="sort-box"><span class="visually-hidden">เรียงลำดับผลงาน</span><select id="sort-products"><option value="featured">แนะนำ</option><option value="newest">มาใหม่</option><option value="price-low">ราคาต่ำไปสูง</option><option value="price-high">ราคาสูงไปต่ำ</option></select></label>
+          </div>
+        </div>
+
+        <div class="results-line"><span id="result-count">กำลังแสดงผลงานตัวอย่าง</span><span class="demo-badge">ตัวอย่างข้อมูล · ไม่มีการซื้อขายจริง</span></div>
+
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" data-category="uxui" data-search="flowkit ui ux dashboard mobile design figma">
+            <button class="product-visual visual-flow" type="button" data-product="Flowkit UI System" aria-label="ดูรายละเอียด Flowkit UI System">
+              <span class="visual-label">UI SYSTEM · FIGMA</span><span class="visual-big-type">Make room<br /><i>for flow.</i></span>
+              <span class="flow-board"><span class="flow-top"><b>Goodday</b><i>⌂ &nbsp; ◷ &nbsp; ⌘</i></span><span class="flow-main"><b>Today<br />looks good.</b><i></i></span><span class="flow-row"><i></i><i></i><i></i></span></span>
+              <span class="visual-orbit"></span><span class="visual-corner">01</span>
+            </button>
+            <div class="product-info"><div class="product-meta"><span class="product-category cat-purple">UX/UI DESIGN</span><button class="save-button" type="button" aria-label="บันทึก Flowkit UI System" aria-pressed="false">♡</button></div><button class="product-title" type="button" data-product="Flowkit UI System">Flowkit — Mobile UI System</button><div class="creator-row"><span class="creator-avatar avatar-lilac">P</span><span>โดย Ploy Studio</span><span class="product-price">฿390</span></div></div>
+          </article>
+          <article class="product-card" data-category="web" data-search="slow studio web design portfolio creative landing page">
+            <button class="product-visual visual-slow" type="button" data-product="Slow Studio Website" aria-label="ดูรายละเอียด Slow Studio Website">
+              <span class="slow-wordmark">slow<span>®</span></span><span class="slow-copy">A little<br />more <i>space.</i></span><span class="slow-sun"></span><span class="slow-horizon"></span><span class="slow-caption">INDEPENDENT CREATIVE STUDIO — 2026</span><span class="visual-corner">02</span>
+            </button>
+            <div class="product-info"><div class="product-meta"><span class="product-category cat-terracotta">WEB DESIGN</span><button class="save-button" type="button" aria-label="บันทึก Slow Studio Website" aria-pressed="false">♡</button></div><button class="product-title" type="button" data-product="Slow Studio Website">Slow Studio — Portfolio Template</button><div class="creator-row"><span class="creator-avatar avatar-peach">S</span><span>โดย Somchai Makes</span><span class="product-price">฿590</span></div></div>
+          </article>
+          <article class="product-card" data-category="template" data-search="notion creative planner template productivity content">
+            <button class="product-visual visual-notion" type="button" data-product="The Maker Planner" aria-label="ดูรายละเอียด The Maker Planner">
+              <span class="notion-orbit"></span><span class="notion-top">THE MAKER'S DESK <span>VOL. 01</span></span><span class="notion-title">Make<br /><i>good things.</i></span><span class="notion-sticky sticky-one">ideas<br />to keep ✳</span><span class="notion-sticky sticky-two">one thing<br />at a time</span><span class="notion-bottom">A NOTION TEMPLATE FOR YOUR CREATIVE PRACTICE</span><span class="visual-corner">03</span>
+            </button>
+            <div class="product-info"><div class="product-meta"><span class="product-category cat-green">TEMPLATES</span><button class="save-button" type="button" aria-label="บันทึก The Maker Planner" aria-pressed="false">♡</button></div><button class="product-title" type="button" data-product="The Maker Planner">The Maker's Desk — Notion Planner</button><div class="creator-row"><span class="creator-avatar avatar-green">N</span><span>โดย Noon Creates</span><span class="product-price">฿250</span></div></div>
+          </article>
+          <article class="product-card" data-category="product" data-search="launchpad startup product idea validation product brief roadmap">
+            <button class="product-visual visual-launch" type="button" data-product="Launchpad Product Brief" aria-label="ดูรายละเอียด Launchpad Product Brief">
+              <span class="launch-stamp">FIELD<br />NOTES <b>№ 04</b></span><span class="launch-title">From<br /><i>thought</i><br />to launch.</span><span class="launch-scribble">✳</span><span class="launch-card"><b>THE PRODUCT<br />STARTER KIT</b><span>01 — Problem<br />02 — People<br />03 — Possibility</span><i>✦</i></span><span class="visual-corner">04</span>
+            </button>
+            <div class="product-info"><div class="product-meta"><span class="product-category cat-orange">PRODUCT & STARTUP</span><button class="save-button" type="button" aria-label="บันทึก Launchpad Product Brief" aria-pressed="false">♡</button></div><button class="product-title" type="button" data-product="Launchpad Product Brief">Launchpad — Product Brief Kit</button><div class="creator-row"><span class="creator-avatar avatar-yellow">K</span><span>โดย Keng Lab</span><span class="product-price">฿320</span></div></div>
+          </article>
+          <article class="product-card" data-category="dev" data-search="api architecture developer diagram documentation starter kit">
+            <button class="product-visual visual-api" type="button" data-product="API Blueprint Pack" aria-label="ดูรายละเอียด API Blueprint Pack">
+              <span class="api-top">SYSTEM NOTES <span>API / 001</span></span><span class="api-title">Make it<br /><i>make sense.</i></span><span class="api-diagram"><b>client</b><i>↔</i><b class="api-node">API</b><i>↔</i><b>data</b><span></span></span><span class="api-code">GET /v1/ideas<br />200 — all good ✳</span><span class="visual-corner">05</span>
+            </button>
+            <div class="product-info"><div class="product-meta"><span class="product-category cat-blue">IT & DEVELOPMENT</span><button class="save-button" type="button" aria-label="บันทึก API Blueprint Pack" aria-pressed="false">♡</button></div><button class="product-title" type="button" data-product="API Blueprint Pack">API Blueprint — Diagram Pack</button><div class="creator-row"><span class="creator-avatar avatar-blue">T</span><span>โดย Tan Builds</span><span class="product-price">฿180</span></div></div>
+          </article>
+          <article class="product-card" data-category="uxui" data-search="soft signal icon set ux ui icon interface visual kit">
+            <button class="product-visual visual-icons" type="button" data-product="Soft Signal Icons" aria-label="ดูรายละเอียด Soft Signal Icons">
+              <span class="icons-kicker">A SOFTER KIND OF SIGNAL</span><span class="icons-title">Soft<br /><i>Signals</i></span><span class="icon-grid"><b>⌂</b><b>♡</b><b>◷</b><b>✳</b><b>⌕</b><b>↗</b></span><span class="icons-foot">48 HAND-DRAWN INTERFACE ICONS</span><span class="visual-corner">06</span>
+            </button>
+            <div class="product-info"><div class="product-meta"><span class="product-category cat-purple">UX/UI DESIGN</span><button class="save-button" type="button" aria-label="บันทึก Soft Signal Icons" aria-pressed="false">♡</button></div><button class="product-title" type="button" data-product="Soft Signal Icons">Soft Signals — Interface Icon Set</button><div class="creator-row"><span class="creator-avatar avatar-pink">M</span><span>โดย Mook Studio</span><span class="product-price">฿160</span></div></div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>ยังไม่พบผลงานที่ตรงกับคำค้น ลองเปลี่ยนคำหรือเลือกหมวดอื่นดูนะ</p>
+        <div class="browse-more"><button class="button button-outline" type="button" id="show-more">ล้างตัวกรองและดูทั้งหมด <span aria-hidden="true">↺</span></button><span>รายการและบัญชีตัวอย่างบันทึกไว้ในเบราว์เซอร์นี้</span></div>
+      </section>
+
+      <section class="seller-section" id="seller">
+        <div class="shell seller-inner">
+          <div class="seller-copy"><div class="section-kicker kicker-light"><span class="kicker-line"></span><span>YOUR WORK, YOUR WAY</span></div><h2>ทำงานที่รัก<br />แล้ว <span>ให้มันไปต่อ</span></h2><p>เปลี่ยนไฟล์ที่คุณทำไว้ให้เป็นรายได้อีกทาง จะเป็น UI kit, เว็บเทมเพลต หรือไอเดียโปรเจกต์ก็เริ่มต้นได้</p><button class="button button-light button-large" type="button" data-open-seller>สมัครเป็นผู้ขาย <span aria-hidden="true">↗</span></button></div>
+          <div class="seller-card-stack" aria-hidden="true"><div class="seller-back-card"></div><div class="seller-main-card"><span class="seller-card-label">CREATOR NOTE / 01</span><span class="seller-quote">“งานของเรา<br />อาจเป็นจุดเริ่มต้น<br /><i>ของใครอีกคน</i>”</span><span class="seller-signature">keep making ✳</span></div><span class="seller-float seller-float-top">YOUR<br />NEXT IDEA ↗</span><span class="seller-float seller-float-bottom">open for<br />good things</span></div>
+        </div>
+      </section>
+
+      <section class="steps-section shell" id="how-it-works" aria-labelledby="steps-title">
+        <div class="steps-heading"><div class="section-kicker"><span class="kicker-line"></span><span>SMALL STEPS, GOOD THINGS</span></div><h2 id="steps-title">เริ่มต้นได้ไม่กี่ขั้น</h2><p>เส้นทางง่าย ๆ สำหรับคนอยากแบ่งปันงานของตัวเอง</p></div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><span class="step-icon step-icon-violet">↗</span><h3>เปิดหน้าร้าน</h3><p>แนะนำตัวและเลือกหมวดงานที่อยากแบ่งปัน ให้คนที่กำลังมองหาเจอคุณได้ง่าย</p><span class="step-connector" aria-hidden="true">········→</span></article>
+          <article class="step-card"><span class="step-number">02</span><span class="step-icon step-icon-orange">✳</span><h3>ลงผลงานของคุณ</h3><p>เล่าให้ชัดว่างานนี้ช่วยอะไรได้บ้าง พร้อมภาพตัวอย่างและรายละเอียดไฟล์</p><span class="step-connector" aria-hidden="true">········→</span></article>
+          <article class="step-card"><span class="step-number">03</span><span class="step-icon step-icon-green">♡</span><h3>แชร์ให้คนต่อยอด</h3><p>ผลงานของคุณได้ไปอยู่ในโปรเจกต์ใหม่ ๆ และสร้างโอกาสให้คนทำงานอีกคน</p></article>
+        </div>
+      </section>
+
+      <section class="closing-section shell">
+      <div class="closing-card"><span class="closing-star" aria-hidden="true">✳</span><div><div class="section-kicker"><span class="kicker-line"></span><span>GOOD IDEAS LIVE HERE</span></div><h2>มีงานดี ๆ อยู่ในมือไหม?</h2><p>เริ่มจากไอเดียชิ้นเดียว แล้วค่อย ๆ สร้างพื้นที่ของคุณ</p></div><button class="button button-primary" type="button" data-open-seller>มาเป็นผู้ขายกัน <span aria-hidden="true">↗</span></button></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="shell footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><b></b><em></em></span><span class="brand-name">madeby<span>.</span></span></a><p>พื้นที่สำหรับไอเดียที่อยากไปต่อ</p><nav class="footer-links" aria-label="ข้อมูลเพิ่มเติม"><button type="button" data-help-page="buying">วิธีซื้อ</button><button type="button" data-help-page="terms">ข้อกำหนด</button><button type="button" data-help-page="license">ลิขสิทธิ์</button><button type="button" data-help-page="privacy">ความเป็นส่วนตัว</button><button type="button" data-help-page="contact">ติดต่อ</button></nav><span class="footer-note">ต้นแบบเพื่อทดลอง · ไม่มีการชำระเงินจริงหรือส่งไฟล์</span></div></footer>
+
+    <dialog class="product-dialog" id="product-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" data-close-dialog="product-dialog" aria-label="ปิดรายละเอียด">×</button>
+      <div class="detail-art" id="detail-art" aria-hidden="true"><span>✳</span></div>
+      <div class="section-kicker"><span class="kicker-line"></span><span>PRODUCT DETAILS</span></div>
+      <span class="product-category cat-purple" id="detail-category">UX/UI DESIGN</span>
+      <h2 id="dialog-title">รายละเอียดผลงาน</h2>
+      <p id="dialog-description"></p>
+      <div class="detail-specs" id="detail-specs"></div>
+      <p class="license-note">เงื่อนไขการใช้งานในต้นแบบนี้เป็นตัวอย่าง ควรให้ผู้ขายกำหนดสิทธิ์การใช้งานจริงก่อนเปิดขาย</p>
+      <section class="detail-feedback"><div><strong>รีวิวและคำถาม</strong><span>จะเปิดใช้เมื่อเชื่อมระบบซื้อจริง</span></div><p>ยังไม่มีรีวิวในตัวอย่าง</p></section>
+      <section class="detail-report">
+        <button type="button" class="text-button" id="toggle-report-form" aria-expanded="false" aria-controls="report-form">แจ้งปัญหาเกี่ยวกับผลงานนี้</button>
+        <form id="report-form" class="report-form" hidden>
+          <p class="workflow-note">ส่งรายงานตัวอย่างเพื่อให้ผู้ดูแลตรวจสอบ ข้อมูลจะบันทึกในเบราว์เซอร์นี้เท่านั้น</p>
+          <label>เหตุผลที่แจ้ง<select name="reason" required><option value="">เลือกเหตุผล</option><option value="copyright">ปัญหาลิขสิทธิ์</option><option value="misleading">รายละเอียดไม่ตรงหรือทำให้เข้าใจผิด</option><option value="quality">ไฟล์หรือผลงานมีปัญหา</option><option value="other">อื่น ๆ</option></select></label>
+          <label>รายละเอียดเพิ่มเติม <span class="optional-label">ไม่บังคับ</span><textarea name="message" rows="2" maxlength="300" placeholder="ช่วยอธิบายสิ่งที่พบ"></textarea></label>
+          <button class="button button-outline" type="submit">ส่งรายงานตัวอย่าง</button>
+        </form>
+      </section>
+      <div class="detail-buy-row"><strong id="detail-price">฿0</strong><button class="button button-primary" id="add-to-cart" type="button">เพิ่มลงตะกร้า <span aria-hidden="true">＋</span></button></div>
+    </dialog>
+
+    <dialog class="workflow-dialog" id="cart-dialog" aria-labelledby="cart-title">
+      <button class="dialog-close" type="button" data-close-dialog="cart-dialog" aria-label="ปิดตะกร้า">×</button>
+      <div class="section-kicker"><span class="kicker-line"></span><span>YOUR BAG</span></div>
+      <h2 id="cart-title">ตะกร้าของคุณ</h2>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-summary"><span>รวมทั้งสิ้น</span><strong id="cart-total">฿0</strong></div>
+      <p class="workflow-note">โหมดสาธิต: ขั้นตอนถัดไปจะไม่เรียกเก็บเงินและไม่ส่งไฟล์</p>
+      <button class="button button-primary wide-button" id="checkout-button" type="button">ไปยังขั้นตอนสั่งซื้อ <span aria-hidden="true">→</span></button>
+    </dialog>
+
+    <dialog class="workflow-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+      <button class="dialog-close" type="button" data-close-dialog="checkout-dialog" aria-label="ปิดหน้าสั่งซื้อ">×</button>
+      <div class="dialog-symbol" aria-hidden="true">✓</div>
+      <div class="section-kicker"><span class="kicker-line"></span><span>DEMO CHECKOUT</span></div>
+      <h2 id="checkout-title">ตรวจสอบคำสั่งซื้อ</h2>
+      <div id="checkout-summary"></div>
+      <p class="workflow-note">นี่เป็นการจำลองการสั่งซื้อเท่านั้น ไม่มีการขอข้อมูลบัตร ไม่มีการเรียกเก็บเงินจริง และไม่มีไฟล์ถูกส่ง</p>
+      <button class="button button-primary wide-button" id="confirm-order" type="button">ยืนยันคำสั่งซื้อจำลอง</button>
+    </dialog>
+
+    <dialog class="workflow-dialog" id="success-dialog" aria-labelledby="success-title">
+      <button class="dialog-close" type="button" data-close-dialog="success-dialog" aria-label="ปิดข้อความยืนยัน">×</button>
+      <div class="dialog-symbol success-symbol" aria-hidden="true">✦</div>
+      <div class="section-kicker"><span class="kicker-line"></span><span>DEMO ORDER COMPLETE</span></div>
+      <h2 id="success-title">บันทึกคำสั่งซื้อจำลองแล้ว</h2>
+      <p id="success-message">รายการนี้ถูกบันทึกในเบราว์เซอร์ของคุณเท่านั้น</p>
+      <button class="button button-primary wide-button" type="button" data-close-dialog="success-dialog">เรียบร้อย</button>
+    </dialog>
+
+    <dialog class="workflow-dialog auth-dialog" id="auth-dialog" aria-labelledby="auth-title">
+      <button class="dialog-close" type="button" data-close-dialog="auth-dialog" aria-label="ปิดหน้าบัญชี">×</button>
+      <div class="dialog-symbol" aria-hidden="true">m.</div>
+      <div class="section-kicker"><span class="kicker-line"></span><span>MADEBY ACCOUNT · DEMO</span></div>
+      <h2 id="auth-title">ยินดีต้อนรับกลับ</h2>
+      <p class="workflow-note auth-warning">โหมดตัวอย่างเท่านั้น: ห้ามใช้รหัสผ่านจริง ชื่อและอีเมลจะอยู่ในเบราว์เซอร์นี้ รหัสผ่านจะไม่ถูกส่งหรือบันทึก</p>
+      <div class="auth-panel" id="auth-login-panel">
+        <form id="auth-login-form" class="form-grid single-column">
+          <label>อีเมล<input name="email" type="email" required autocomplete="email" placeholder="you@example.com" /></label>
+          <label>รหัสผ่านสำหรับทดลอง<input name="password" type="password" required minlength="6" autocomplete="off" placeholder="รหัสผ่านใดก็ได้ 6 ตัวขึ้นไป" /></label>
+          <button class="button button-primary form-full" type="submit">เข้าสู่ระบบจำลอง</button>
+        </form>
+        <div class="auth-links"><button type="button" data-auth-mode="register">สร้างบัญชีตัวอย่าง</button><button type="button" data-auth-mode="reset">ลืมรหัสผ่าน?</button></div>
+        <button class="button button-outline wide-button" id="demo-login" type="button">เข้าใช้บัญชีทดลองทันที</button>
+      </div>
+      <div class="auth-panel" id="auth-register-panel" hidden>
+        <form id="auth-register-form" class="form-grid single-column">
+          <label>ชื่อที่ใช้แสดง<input name="name" required maxlength="50" autocomplete="name" placeholder="ชื่อของคุณ" /></label>
+          <label>อีเมล<input name="email" type="email" required autocomplete="email" placeholder="you@example.com" /></label>
+          <label>ตั้งรหัสผ่านทดลอง<input name="password" type="password" required minlength="6" autocomplete="new-password" placeholder="อย่างน้อย 6 ตัวอักษร" /></label>
+          <label>ยืนยันรหัสผ่าน<input name="confirmPassword" type="password" required minlength="6" autocomplete="new-password" placeholder="กรอกรหัสผ่านอีกครั้ง" /></label>
+          <button class="button button-primary form-full" type="submit">สร้างบัญชีจำลอง</button>
+        </form>
+        <button class="text-button" type="button" data-auth-mode="login">กลับไปเข้าสู่ระบบ</button>
+      </div>
+      <div class="auth-panel" id="auth-reset-panel" hidden>
+        <p class="workflow-note">หน้าจอนี้จำลองการขอลิงก์ตั้งรหัสผ่านใหม่ ระบบจะไม่ส่งอีเมลจริง</p>
+        <form id="auth-reset-form" class="form-grid single-column"><label>อีเมลบัญชี<input name="email" type="email" required autocomplete="email" placeholder="you@example.com" /></label><button class="button button-primary form-full" type="submit">จำลองการส่งลิงก์</button></form>
+        <button class="text-button" type="button" data-auth-mode="login">กลับไปเข้าสู่ระบบ</button>
+      </div>
+    </dialog>
+
+    <dialog class="workflow-dialog account-dialog" id="account-dialog" aria-labelledby="account-title">
+      <button class="dialog-close" type="button" data-close-dialog="account-dialog" aria-label="ปิดบัญชี">×</button>
+      <div class="account-heading"><div class="account-avatar" id="account-avatar">M</div><div><div class="section-kicker"><span class="kicker-line"></span><span>YOUR MADEBY</span></div><h2 id="account-title">บัญชีของคุณ</h2><p id="account-email" class="workflow-note"></p></div><button class="text-button sign-out-button" id="sign-out-button" type="button">ออกจากระบบ</button></div>
+      <p class="demo-ribbon">ข้อมูลบัญชีและคำสั่งซื้อเป็นข้อมูลจำลองที่เก็บในเบราว์เซอร์นี้</p>
+      <nav class="account-tabs" aria-label="เมนูบัญชี">
+        <button type="button" data-account-tab="overview" class="active" aria-selected="true">ภาพรวม</button><button type="button" data-account-tab="orders" aria-selected="false">คำสั่งซื้อ</button><button type="button" data-account-tab="downloads" aria-selected="false">ดาวน์โหลด</button><button type="button" data-account-tab="saved" aria-selected="false">บันทึกไว้</button><button type="button" data-account-tab="profile" aria-selected="false">โปรไฟล์</button>
+      </nav>
+      <section class="account-pane" id="account-pane-overview"><div class="account-stats"><div><strong id="account-saved-count">0</strong><span>รายการบันทึก</span></div><div><strong id="account-order-count">0</strong><span>คำสั่งซื้อจำลอง</span></div><div><strong id="account-download-count">0</strong><span>ไฟล์ตัวอย่าง</span></div></div><div class="account-history" id="account-history"></div><div class="account-actions"><button class="button button-primary" id="account-seller-action" type="button">สมัครเป็นผู้ขาย <span aria-hidden="true">↗</span></button><button class="button button-outline" id="open-admin-demo" type="button">แผงผู้ดูแล · Demo</button></div></section>
+      <section class="account-pane" id="account-pane-orders" hidden><h3>คำสั่งซื้อของคุณ</h3><div id="account-orders-list"></div></section>
+      <section class="account-pane" id="account-pane-downloads" hidden><h3>ไฟล์ที่ซื้อ</h3><p class="workflow-note">ลิงก์ดาวน์โหลดจริงจะเปิดหลังเชื่อมระบบชำระเงินและจัดเก็บไฟล์</p><div id="account-downloads-list"></div></section>
+      <section class="account-pane" id="account-pane-saved" hidden><h3>รายการที่บันทึก</h3><div id="account-saved-list"></div></section>
+      <section class="account-pane" id="account-pane-profile" hidden><h3>ข้อมูลโปรไฟล์</h3><p class="workflow-note">แก้ไขข้อมูลตัวอย่างซึ่งบันทึกอยู่ในเบราว์เซอร์นี้</p><form id="account-profile-form" class="form-grid"><label>ชื่อที่ใช้แสดง<input name="displayName" required maxlength="50" /></label><label>อีเมล<input name="email" type="email" required maxlength="100" /></label><button class="button button-primary form-full" type="submit">บันทึกโปรไฟล์</button></form></section>
+      <button class="text-button danger-text" id="clear-demo-data" type="button">ล้างข้อมูลตัวอย่างในเบราว์เซอร์นี้</button>
+    </dialog>
+
+    <dialog class="workflow-dialog seller-dialog" id="seller-dialog" aria-labelledby="seller-dialog-title">
+      <button class="dialog-close" type="button" data-close-dialog="seller-dialog" aria-label="ปิดหน้าร้าน">×</button>
+      <div class="seller-onboarding" id="seller-onboarding">
+        <div class="section-kicker"><span class="kicker-line"></span><span>CREATOR ONBOARDING</span></div>
+        <h2 id="seller-dialog-title">สร้างหน้าร้านตัวอย่าง</h2>
+        <p class="workflow-note">กรอกข้อมูลเพื่อทดลองขั้นตอนสมัคร ข้อมูลจะถูกเก็บไว้ในเบราว์เซอร์นี้และไม่ถูกส่งออกไป</p>
+        <form id="seller-form" class="form-grid">
+          <label>ชื่อที่ใช้แสดง<input name="displayName" required maxlength="50" placeholder="เช่น Ploy Studio" /></label>
+          <label>ชื่อร้าน<input name="storeName" required maxlength="50" placeholder="ชื่อร้านหรือสตูดิโอ" /></label>
+          <label>อีเมลสำหรับติดต่อ<input name="email" type="email" required maxlength="100" placeholder="you@example.com" /></label>
+          <label>ลิงก์ผลงาน <span class="optional-label">ไม่บังคับ</span><input name="portfolio" type="url" placeholder="https://..." /></label>
+          <label class="form-full">หมวดหลัก<select name="category" required><option value="uxui">UX/UI Design</option><option value="web">Web Design</option><option value="template">Templates</option><option value="product">Product & Startup</option><option value="idea">Project Ideas</option><option value="dev">Dev Tools</option></select></label>
+          <label class="checkbox-label form-full"><input name="agree" type="checkbox" required /><span>ฉันเข้าใจว่านี่คือต้นแบบและไม่มีการส่งข้อมูลหรือเปิดร้านจริง</span></label>
+          <button class="button button-primary form-full" type="submit">สร้างหน้าร้านตัวอย่าง <span aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+      <div class="seller-dashboard" id="seller-dashboard" hidden>
+        <div class="section-kicker"><span class="kicker-line"></span><span>YOUR CREATOR SPACE</span></div>
+        <h2 id="seller-store-title">หน้าร้านของคุณ</h2>
+        <p class="workflow-note">จัดการร้านและรายการตัวอย่าง ยอดขายจะแสดงจากคำสั่งซื้อจำลองในเบราว์เซอร์นี้</p>
+        <div class="seller-metrics"><div><span>ผลงานทั้งหมด</span><strong id="seller-product-count">0</strong></div><div><span>ยอดขายจำลอง</span><strong id="seller-sales-total">฿0</strong></div><div><span>คำสั่งซื้อ</span><strong id="seller-order-count">0</strong></div></div>
+        <nav class="seller-tabs" aria-label="เมนูจัดการร้าน"><button type="button" class="active" data-seller-tab="products">ผลงาน</button><button type="button" data-seller-tab="sales">คำสั่งซื้อ</button><button type="button" data-seller-tab="payouts">รายรับ</button><button type="button" data-seller-tab="store">ข้อมูลร้าน</button></nav>
+        <section class="seller-pane" id="seller-pane-products"><div class="seller-dashboard-bar"><span>รายการผลงานและสถานะตรวจสอบ</span><button class="button button-primary" id="add-product-button" type="button">＋ เพิ่มผลงาน</button></div><div class="seller-product-list" id="seller-product-list"></div></section>
+        <section class="seller-pane" id="seller-pane-sales" hidden><h3>คำสั่งซื้อจากสินค้าของร้าน</h3><div id="seller-order-list"></div></section>
+        <section class="seller-pane" id="seller-pane-payouts" hidden><h3>สรุปรายรับตัวอย่าง</h3><div class="payout-card"><span>ยอดขายจำลองรวม</span><strong id="seller-payout-total">฿0</strong><p>ยังไม่มีการเชื่อมระบบค่าธรรมเนียม บัญชีรับเงิน หรือรอบโอนเงินจริง</p></div><div class="history-empty">รายการโอนเงินให้ผู้ขายจะแสดงหลังเชื่อมผู้ให้บริการชำระเงิน</div></section>
+        <section class="seller-pane" id="seller-pane-store" hidden><div class="store-profile-card"><span>ข้อมูลร้านตัวอย่าง</span><strong id="seller-profile-name"></strong><small id="seller-profile-email"></small><a id="seller-profile-link" href="#" target="_blank" rel="noreferrer" hidden>เปิดลิงก์ผลงาน ↗</a><button class="text-button" id="edit-seller-profile" type="button">แก้ไขข้อมูลร้าน</button></div></section>
+      </div>
+    </dialog>
+
+    <dialog class="workflow-dialog admin-dialog" id="admin-dialog" aria-labelledby="admin-title">
+      <button class="dialog-close" type="button" data-close-dialog="admin-dialog" aria-label="ปิดแผงผู้ดูแล">×</button>
+      <div class="section-kicker"><span class="kicker-line"></span><span>ADMIN WORKSPACE · DEMO MODE</span></div><h2 id="admin-title">แผงผู้ดูแลระบบ</h2>
+      <p class="workflow-note">หน้าจอนี้จำลองการตรวจรายการสินค้าเท่านั้น การใช้งานจริงต้องจำกัดสิทธิ์ฝั่งเซิร์ฟเวอร์</p>
+      <div class="admin-stats"><div><strong id="admin-pending-count">0</strong><span>รอตรวจ</span></div><div><strong id="admin-published-count">0</strong><span>เผยแพร่แล้ว</span></div><div><strong id="admin-report-count">0</strong><span>เรื่องที่เปิดอยู่</span></div></div>
+      <div class="admin-tabs"><button type="button" class="active" data-admin-tab="moderation">ตรวจสินค้า</button><button type="button" data-admin-tab="reports">ข้อร้องเรียน</button></div>
+      <section id="admin-pane-moderation" class="admin-pane"><div id="admin-product-queue"></div></section>
+      <section id="admin-pane-reports" class="admin-pane" hidden><div id="admin-report-queue"></div><p class="workflow-note">รายงานเป็นข้อมูลตัวอย่างในเบราว์เซอร์นี้ ยังไม่มีการแจ้งเตือนหรือส่งต่อทีมงาน</p></section>
+    </dialog>
+
+    <dialog class="workflow-dialog help-dialog" id="help-dialog" aria-labelledby="help-title">
+      <button class="dialog-close" type="button" data-close-dialog="help-dialog" aria-label="ปิดข้อมูลช่วยเหลือ">×</button>
+      <div class="section-kicker"><span class="kicker-line"></span><span>HELP & POLICIES · SAMPLE</span></div><h2 id="help-title">ข้อมูลสำหรับผู้ใช้</h2>
+      <nav class="help-tabs" aria-label="ข้อมูลช่วยเหลือ"><button type="button" data-help-page="buying">วิธีซื้อ</button><button type="button" data-help-page="terms">ข้อกำหนด</button><button type="button" data-help-page="license">ลิขสิทธิ์</button><button type="button" data-help-page="privacy">ความเป็นส่วนตัว</button><button type="button" data-help-page="refund">คืนเงิน</button><button type="button" data-help-page="contact">ติดต่อ</button></nav>
+      <section class="help-content" id="help-content"></section>
+    </dialog>
+
+    <dialog class="workflow-dialog" id="product-form-dialog" aria-labelledby="product-form-title">
+      <button class="dialog-close" type="button" data-close-dialog="product-form-dialog" aria-label="ปิดฟอร์มสินค้า">×</button>
+      <div class="section-kicker"><span class="kicker-line"></span><span>PRODUCT LISTING</span></div>
+      <h2 id="product-form-title">เพิ่มผลงาน</h2>
+      <p class="workflow-note">รายการใหม่จะเข้าคิวตรวจสอบในโหมด Demo รูปที่เลือกจะแสดงเป็นภาพปกเฉพาะในเบราว์เซอร์นี้</p>
+      <form id="product-form" class="form-grid">
+        <label class="form-full">ชื่อผลงาน<input name="title" required maxlength="80" placeholder="เช่น Calm Dashboard UI Kit" /></label>
+        <label>หมวดหมู่<select name="category" required><option value="uxui">UX/UI Design</option><option value="web">Web Design</option><option value="template">Templates</option><option value="product">Product & Startup</option><option value="idea">Project Ideas</option><option value="dev">Dev Tools</option></select></label>
+        <label>ราคา (บาท)<input name="price" type="number" min="0" max="100000" step="1" required placeholder="390" /></label>
+        <label>รูปแบบไฟล์<input name="fileType" required maxlength="50" placeholder="เช่น Figma, PDF, Notion" /></label>
+        <label>เครื่องมือที่ใช้<input name="tools" maxlength="80" placeholder="เช่น Figma, Notion" /></label>
+        <label class="form-full">ภาพปกตัวอย่าง <span class="optional-label">PNG, JPG หรือ WebP · ไม่เกิน 8 MB</span><input name="cover" id="product-cover" type="file" accept="image/png,image/jpeg,image/webp" /></label>
+        <div class="cover-preview form-full" id="cover-preview" hidden><img id="cover-preview-image" alt="ตัวอย่างภาพปกสินค้า" /><button class="text-button" type="button" id="remove-cover">นำภาพออก</button></div>
+        <label class="form-full">ไฟล์สินค้าสำหรับแสดงตัวอย่าง <span class="optional-label">เก็บเฉพาะชื่อและขนาดไฟล์ ไม่อัปโหลดไฟล์</span><input name="assets" id="product-assets" type="file" multiple accept=".zip,.pdf,.fig,.figma,.sketch,.xd,.psd,.svg,.png,.jpg,.webp,.json,.md,.txt" /></label>
+        <div class="selected-assets form-full" id="selected-assets" aria-live="polite"><span>ยังไม่ได้เลือกไฟล์</span><button class="text-button" type="button" id="clear-assets">ล้างรายการไฟล์</button></div>
+        <label class="form-full">รายละเอียด<textarea name="description" rows="3" required maxlength="500" placeholder="อธิบายว่าผลงานนี้ช่วยอะไรและเหมาะกับใคร"></textarea></label>
+        <button class="button button-primary form-full" type="submit">บันทึกรายการตัวอย่าง <span aria-hidden="true">✓</span></button>
+      </form>
+    </dialog>
+  </body>
+</html>
