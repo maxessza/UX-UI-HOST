@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f7f6ff" />
-    <meta name="description" content="ตลาดรวมงานออกแบบ UX/UI, Web Design และไอเดียด้าน IT จากนักสร้างสรรค์อิสระ" />
-    <title>Madeby — ตลาดงานดีไซน์และไอเดีย IT</title>
+    <meta name="description" content="แพลตฟอร์มจับคู่ลูกค้ากับฟรีแลนซ์สาย UX/UI, Web Design และ IT ดูผลงาน ราคาเริ่มต้น และทักคุยได้โดยตรง" />
+    <title>Madeby — หาและจ้างฟรีแลนซ์สายดิจิทัล</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
   </head>
@@ -23,11 +23,11 @@
           <a href="#how-it-works">วิธีใช้งาน</a>
         </nav>
         <div class="header-actions">
-          <button class="header-tool" id="cart-button" type="button" aria-label="เปิดตะกร้า">
-            <span aria-hidden="true">▱</span><span class="cart-count" id="cart-count">0</span>
+          <button class="header-tool" id="inbox-button" type="button" aria-label="เปิดข้อความจากฟรีแลนซ์">
+            <span aria-hidden="true">✉</span><span class="inbox-count" id="inbox-count">0</span>
           </button>
           <button class="login-link" id="account-button" type="button" aria-label="เปิดบัญชีและจัดการร้านค้า"><span class="account-full">บัญชี / ร้านค้า</span><span class="account-short">บัญชี</span></button>
-          <button class="button button-small button-primary" type="button" data-open-seller>เริ่มขายงาน <span aria-hidden="true">↗</span></button>
+          <button class="button button-small button-primary" type="button" data-open-seller>สมัครเป็นฟรีแลนซ์ <span aria-hidden="true">↗</span></button>
         </div>
         <button class="menu-toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false">
           <span></span><span></span>
@@ -41,17 +41,17 @@
         <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
         <div class="hero-inner shell">
           <div class="hero-copy">
-            <div class="eyebrow"><span class="eyebrow-dot"></span> DIGITAL GOODS MARKETPLACE</div>
-            <h1>ไอเดียดี ๆ<br />ควรได้ไปต่อ <span>ให้ไกล</span></h1>
-            <p class="hero-description">พื้นที่สำหรับคนทำ UX/UI, Web Design และสาย IT<br class="desktop-break" /> ที่อยากแบ่งปันผลงานให้คนอื่นนำไปใช้ต่อได้จริง</p>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> FREELANCE SERVICE MARKETPLACE</div>
+            <h1>หาคนทำงานดิจิทัล<br />ที่เข้าใจสิ่งที่คุณ <span>ต้องการ</span></h1>
+            <p class="hero-description">เลือกดูผลงาน UX/UI, เว็บไซต์ และงานสาย IT<br class="desktop-break" /> แล้วทักคุยกับฟรีแลนซ์ได้โดยตรง</p>
             <div class="hero-actions">
-              <a class="button button-primary button-large" href="#explore">เลือกดูผลงาน <span aria-hidden="true">→</span></a>
-              <button class="button button-quiet button-large" type="button" data-open-seller><span class="sparkle" aria-hidden="true">✳</span> ฉันอยากขายงาน</button>
+              <a class="button button-primary button-large" href="#explore">หาฟรีแลนซ์ <span aria-hidden="true">→</span></a>
+              <button class="button button-quiet button-large" type="button" data-open-seller><span class="sparkle" aria-hidden="true">✳</span> ฉันอยากรับงาน</button>
             </div>
-            <div class="hero-note"><span class="note-avatar" aria-hidden="true">✦</span><span>เทมเพลต · UI kit · ไอเดียโปรเจกต์ <b>ในที่เดียว</b></span></div>
+            <div class="hero-note"><span class="note-avatar" aria-hidden="true">✦</span><span>ดูตัวอย่างงาน · เช็กราคา · <b>คุยก่อนจ้าง</b></span></div>
           </div>
 
-          <div class="hero-art" aria-label="ภาพตัวอย่างสินค้าและหน้าร้านบน Madeby">
+          <div class="hero-art" aria-label="ภาพตัวอย่างบริการและโปรไฟล์ฟรีแลนซ์บน Madeby">
             <div class="orbit orbit-large" aria-hidden="true"></div>
             <div class="orbit orbit-small" aria-hidden="true"></div>
             <div class="hero-sticker sticker-top"><span class="sticker-icon">✳</span><span>Made for<br /><b>what's next</b></span></div>
@@ -88,10 +88,10 @@
             <button class="category-chip active" type="button" data-filter="all" aria-pressed="true"><span>✦</span> ทั้งหมด</button>
             <button class="category-chip" type="button" data-filter="uxui" aria-pressed="false"><span>▦</span> UX/UI Design</button>
             <button class="category-chip" type="button" data-filter="web" aria-pressed="false"><span>◫</span> Web Design</button>
-            <button class="category-chip" type="button" data-filter="template" aria-pressed="false"><span>▤</span> Templates</button>
-            <button class="category-chip" type="button" data-filter="product" aria-pressed="false"><span>◈</span> Product & Startup</button>
-            <button class="category-chip" type="button" data-filter="idea" aria-pressed="false"><span>✧</span> Project Ideas</button>
-            <button class="category-chip" type="button" data-filter="dev" aria-pressed="false"><span>⌘</span> Dev Tools</button>
+            <button class="category-chip" type="button" data-filter="template" aria-pressed="false"><span>▤</span> Branding & Graphic</button>
+            <button class="category-chip" type="button" data-filter="product" aria-pressed="false"><span>◈</span> Product Consulting</button>
+            <button class="category-chip" type="button" data-filter="idea" aria-pressed="false"><span>✧</span> IT & Startup Ideas</button>
+            <button class="category-chip" type="button" data-filter="dev" aria-pressed="false"><span>⌘</span> Development</button>
             <button class="category-chip" type="button" data-filter="saved" aria-pressed="false"><span>♡</span> ที่บันทึก</button>
           </div>
         </div>
@@ -100,17 +100,17 @@
       <section class="discover-section shell" id="explore" aria-labelledby="discover-title">
         <div class="section-heading">
           <div>
-            <div class="section-kicker"><span class="kicker-line"></span><span>THE CREATOR SHELF</span></div>
-            <h2 id="discover-title">งานน่าสนใจ <span>คัดมาให้ดู</span></h2>
-            <p class="section-subtitle">ตัวอย่างผลงานจำลอง เพื่อให้เห็นภาพการเลือกซื้อและการนำไปต่อยอด</p>
+          <div class="section-kicker"><span class="kicker-line"></span><span>FREELANCE DIRECTORY</span></div>
+            <h2 id="discover-title">เลือกฟรีแลนซ์ <span>จากผลงาน</span></h2>
+            <p class="section-subtitle">ดูตัวอย่างงาน ราคาเริ่มต้น และคุยรายละเอียดก่อนตัดสินใจ</p>
           </div>
           <div class="listing-tools">
-            <label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="visually-hidden">ค้นหาผลงาน</span><input id="product-search" type="search" placeholder="ค้นหางานหรือไอเดีย..." autocomplete="off" /><kbd>⌕</kbd></label>
-            <label class="sort-box"><span class="visually-hidden">เรียงลำดับผลงาน</span><select id="sort-products"><option value="featured">แนะนำ</option><option value="newest">มาใหม่</option><option value="price-low">ราคาต่ำไปสูง</option><option value="price-high">ราคาสูงไปต่ำ</option></select></label>
+            <label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="visually-hidden">ค้นหาบริการ</span><input id="product-search" type="search" placeholder="ค้นหาบริการหรือทักษะ..." autocomplete="off" /><kbd>⌕</kbd></label>
+            <label class="sort-box"><span class="visually-hidden">เรียงลำดับบริการ</span><select id="sort-products"><option value="featured">แนะนำ</option><option value="newest">โปรไฟล์ใหม่</option><option value="price-low">ราคาเริ่มต้นต่ำไปสูง</option><option value="price-high">ราคาเริ่มต้นสูงไปต่ำ</option></select></label>
           </div>
         </div>
 
-        <div class="results-line"><span id="result-count">กำลังแสดงผลงานตัวอย่าง</span><span class="demo-badge">ตัวอย่างข้อมูล · ไม่มีการซื้อขายจริง</span></div>
+        <div class="results-line"><span id="result-count">กำลังแสดงบริการตัวอย่าง</span><span class="demo-badge">ราคาและโปรไฟล์ตัวอย่าง · ติดต่อฟรีแลนซ์ได้</span></div>
 
         <div class="product-grid" id="product-grid">
           <article class="product-card" data-category="uxui" data-search="flowkit ui ux dashboard mobile design figma">
@@ -153,12 +153,12 @@
           </article>
         </div>
         <p class="empty-state" id="empty-state" hidden>ยังไม่พบผลงานที่ตรงกับคำค้น ลองเปลี่ยนคำหรือเลือกหมวดอื่นดูนะ</p>
-        <div class="browse-more"><button class="button button-outline" type="button" id="show-more">ล้างตัวกรองและดูทั้งหมด <span aria-hidden="true">↺</span></button><span>รายการและบัญชีตัวอย่างบันทึกไว้ในเบราว์เซอร์นี้</span></div>
+        <div class="browse-more"><button class="button button-outline" type="button" id="show-more">ล้างตัวกรองและดูทั้งหมด <span aria-hidden="true">↺</span></button><span>ข้อมูลตัวอย่าง · ข้อความติดต่อจะอยู่ในเบราว์เซอร์นี้</span></div>
       </section>
 
       <section class="seller-section" id="seller">
         <div class="shell seller-inner">
-          <div class="seller-copy"><div class="section-kicker kicker-light"><span class="kicker-line"></span><span>YOUR WORK, YOUR WAY</span></div><h2>ทำงานที่รัก<br />แล้ว <span>ให้มันไปต่อ</span></h2><p>เปลี่ยนไฟล์ที่คุณทำไว้ให้เป็นรายได้อีกทาง จะเป็น UI kit, เว็บเทมเพลต หรือไอเดียโปรเจกต์ก็เริ่มต้นได้</p><button class="button button-light button-large" type="button" data-open-seller>สมัครเป็นผู้ขาย <span aria-hidden="true">↗</span></button></div>
+          <div class="seller-copy"><div class="section-kicker kicker-light"><span class="kicker-line"></span><span>YOUR WORK, YOUR WAY</span></div><h2>มีทักษะดี ๆ<br />ก็ <span>เปิดรับงานได้</span></h2><p>สร้างโปรไฟล์ โชว์ผลงาน ตั้งราคาเริ่มต้น แล้วให้ลูกค้าทักมาคุยรายละเอียดกับคุณ</p><button class="button button-light button-large" type="button" data-open-seller>เปิดหน้าฟรีแลนซ์ <span aria-hidden="true">↗</span></button></div>
           <div class="seller-card-stack" aria-hidden="true"><div class="seller-back-card"></div><div class="seller-main-card"><span class="seller-card-label">CREATOR NOTE / 01</span><span class="seller-quote">“งานของเรา<br />อาจเป็นจุดเริ่มต้น<br /><i>ของใครอีกคน</i>”</span><span class="seller-signature">keep making ✳</span></div><span class="seller-float seller-float-top">YOUR<br />NEXT IDEA ↗</span><span class="seller-float seller-float-bottom">open for<br />good things</span></div>
         </div>
       </section>
@@ -166,31 +166,34 @@
       <section class="steps-section shell" id="how-it-works" aria-labelledby="steps-title">
         <div class="steps-heading"><div class="section-kicker"><span class="kicker-line"></span><span>SMALL STEPS, GOOD THINGS</span></div><h2 id="steps-title">เริ่มต้นได้ไม่กี่ขั้น</h2><p>เส้นทางง่าย ๆ สำหรับคนอยากแบ่งปันงานของตัวเอง</p></div>
         <div class="steps-grid">
-          <article class="step-card"><span class="step-number">01</span><span class="step-icon step-icon-violet">↗</span><h3>เปิดหน้าร้าน</h3><p>แนะนำตัวและเลือกหมวดงานที่อยากแบ่งปัน ให้คนที่กำลังมองหาเจอคุณได้ง่าย</p><span class="step-connector" aria-hidden="true">········→</span></article>
-          <article class="step-card"><span class="step-number">02</span><span class="step-icon step-icon-orange">✳</span><h3>ลงผลงานของคุณ</h3><p>เล่าให้ชัดว่างานนี้ช่วยอะไรได้บ้าง พร้อมภาพตัวอย่างและรายละเอียดไฟล์</p><span class="step-connector" aria-hidden="true">········→</span></article>
-          <article class="step-card"><span class="step-number">03</span><span class="step-icon step-icon-green">♡</span><h3>แชร์ให้คนต่อยอด</h3><p>ผลงานของคุณได้ไปอยู่ในโปรเจกต์ใหม่ ๆ และสร้างโอกาสให้คนทำงานอีกคน</p></article>
+          <article class="step-card"><span class="step-number">01</span><span class="step-icon step-icon-violet">↗</span><h3>เปิดโปรไฟล์ฟรีแลนซ์</h3><p>แนะนำทักษะ เลือกหมวดงาน และใส่ช่องทางติดต่อให้ลูกค้ารู้จักคุณ</p><span class="step-connector" aria-hidden="true">········→</span></article>
+          <article class="step-card"><span class="step-number">02</span><span class="step-icon step-icon-orange">✳</span><h3>เพิ่มบริการและผลงาน</h3><p>อธิบายขอบเขตงาน ใส่ราคาเริ่มต้น และภาพตัวอย่างที่เคยทำ</p><span class="step-connector" aria-hidden="true">········→</span></article>
+          <article class="step-card"><span class="step-number">03</span><span class="step-icon step-icon-green">♡</span><h3>คุยรายละเอียดกับลูกค้า</h3><p>รับข้อความสอบถาม ตอบกลับ และตกลงขอบเขตงานกันโดยตรง</p></article>
         </div>
       </section>
 
       <section class="closing-section shell">
-      <div class="closing-card"><span class="closing-star" aria-hidden="true">✳</span><div><div class="section-kicker"><span class="kicker-line"></span><span>GOOD IDEAS LIVE HERE</span></div><h2>มีงานดี ๆ อยู่ในมือไหม?</h2><p>เริ่มจากไอเดียชิ้นเดียว แล้วค่อย ๆ สร้างพื้นที่ของคุณ</p></div><button class="button button-primary" type="button" data-open-seller>มาเป็นผู้ขายกัน <span aria-hidden="true">↗</span></button></div>
+        <div class="closing-card"><span class="closing-star" aria-hidden="true">✳</span><div><div class="section-kicker"><span class="kicker-line"></span><span>GOOD IDEAS LIVE HERE</span></div><h2>พร้อมเปิดรับงานหรือยัง?</h2><p>สร้างโปรไฟล์ โชว์บริการ และคุยกับลูกค้าผ่าน Madeby</p></div><button class="button button-primary" type="button" data-open-seller>เปิดโปรไฟล์ฟรีแลนซ์ <span aria-hidden="true">↗</span></button></div>
       </section>
     </main>
 
-    <footer class="site-footer"><div class="shell footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><b></b><em></em></span><span class="brand-name">madeby<span>.</span></span></a><p>พื้นที่สำหรับไอเดียที่อยากไปต่อ</p><nav class="footer-links" aria-label="ข้อมูลเพิ่มเติม"><button type="button" data-help-page="buying">วิธีซื้อ</button><button type="button" data-help-page="terms">ข้อกำหนด</button><button type="button" data-help-page="license">ลิขสิทธิ์</button><button type="button" data-help-page="privacy">ความเป็นส่วนตัว</button><button type="button" data-help-page="contact">ติดต่อ</button></nav><span class="footer-note">ต้นแบบเพื่อทดลอง · ไม่มีการชำระเงินจริงหรือส่งไฟล์</span></div></footer>
+    <footer class="site-footer"><div class="shell footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><b></b><em></em></span><span class="brand-name">madeby<span>.</span></span></a><p>พื้นที่พบกันของลูกค้าและฟรีแลนซ์สายดิจิทัล</p><nav class="footer-links" aria-label="ข้อมูลเพิ่มเติม"><button type="button" data-help-page="hiring">วิธีจ้างงาน</button><button type="button" data-help-page="terms">ข้อกำหนด</button><button type="button" data-help-page="license">ลิขสิทธิ์</button><button type="button" data-help-page="privacy">ความเป็นส่วนตัว</button><button type="button" data-help-page="contact">ติดต่อ</button></nav><span class="footer-note">ต้นแบบเพื่อทดลอง · ข้อความและโปรไฟล์เก็บในเบราว์เซอร์นี้</span></div></footer>
 
     <dialog class="product-dialog" id="product-dialog" aria-labelledby="dialog-title">
       <button class="dialog-close" type="button" data-close-dialog="product-dialog" aria-label="ปิดรายละเอียด">×</button>
       <div class="detail-art" id="detail-art" aria-hidden="true"><span>✳</span></div>
-      <div class="section-kicker"><span class="kicker-line"></span><span>PRODUCT DETAILS</span></div>
+      <div class="detail-gallery-thumbs" id="detail-gallery-thumbs" aria-label="ภาพตัวอย่างผลงาน"></div>
+      <div class="section-kicker"><span class="kicker-line"></span><span>FREELANCER SERVICE</span></div>
+      <div class="detail-seller"><span class="creator-avatar avatar-lilac" id="detail-seller-avatar">M</span><div><button type="button" class="seller-profile-link" id="detail-view-seller">Madeby Creator</button><small id="detail-seller-status">รับงานอยู่ · ตอบกลับไว</small></div><span class="detail-rating" id="detail-rating">★ 5.0</span></div>
       <span class="product-category cat-purple" id="detail-category">UX/UI DESIGN</span>
-      <h2 id="dialog-title">รายละเอียดผลงาน</h2>
+      <h2 id="dialog-title">รายละเอียดบริการ</h2>
       <p id="dialog-description"></p>
       <div class="detail-specs" id="detail-specs"></div>
-      <p class="license-note">เงื่อนไขการใช้งานในต้นแบบนี้เป็นตัวอย่าง ควรให้ผู้ขายกำหนดสิทธิ์การใช้งานจริงก่อนเปิดขาย</p>
-      <section class="detail-feedback"><div><strong>รีวิวและคำถาม</strong><span>จะเปิดใช้เมื่อเชื่อมระบบซื้อจริง</span></div><p>ยังไม่มีรีวิวในตัวอย่าง</p></section>
+      <div class="detail-packages" id="detail-packages"></div>
+      <p class="license-note">ราคาที่แสดงเป็นราคาเริ่มต้น ขอบเขตและวันส่งงานสามารถตกลงกับฟรีแลนซ์ได้ก่อนเริ่มงาน</p>
+      <section class="detail-feedback"><div><strong>รีวิวจากลูกค้า</strong><span id="detail-review-count">ข้อมูลตัวอย่าง</span></div><p id="detail-review-summary">ดูคะแนนและคุยรายละเอียดก่อนตัดสินใจ</p></section>
       <section class="detail-report">
-        <button type="button" class="text-button" id="toggle-report-form" aria-expanded="false" aria-controls="report-form">แจ้งปัญหาเกี่ยวกับผลงานนี้</button>
+        <button type="button" class="text-button" id="toggle-report-form" aria-expanded="false" aria-controls="report-form">แจ้งปัญหาเกี่ยวกับบริการนี้</button>
         <form id="report-form" class="report-form" hidden>
           <p class="workflow-note">ส่งรายงานตัวอย่างเพื่อให้ผู้ดูแลตรวจสอบ ข้อมูลจะบันทึกในเบราว์เซอร์นี้เท่านั้น</p>
           <label>เหตุผลที่แจ้ง<select name="reason" required><option value="">เลือกเหตุผล</option><option value="copyright">ปัญหาลิขสิทธิ์</option><option value="misleading">รายละเอียดไม่ตรงหรือทำให้เข้าใจผิด</option><option value="quality">ไฟล์หรือผลงานมีปัญหา</option><option value="other">อื่น ๆ</option></select></label>
@@ -198,36 +201,42 @@
           <button class="button button-outline" type="submit">ส่งรายงานตัวอย่าง</button>
         </form>
       </section>
-      <div class="detail-buy-row"><strong id="detail-price">฿0</strong><button class="button button-primary" id="add-to-cart" type="button">เพิ่มลงตะกร้า <span aria-hidden="true">＋</span></button></div>
+      <div class="detail-contact-row"><strong id="detail-price">เริ่มต้น ฿0</strong><button class="button button-primary" id="detail-contact-button" type="button">ทักคุยกับฟรีแลนซ์ <span aria-hidden="true">↗</span></button></div>
     </dialog>
 
-    <dialog class="workflow-dialog" id="cart-dialog" aria-labelledby="cart-title">
-      <button class="dialog-close" type="button" data-close-dialog="cart-dialog" aria-label="ปิดตะกร้า">×</button>
-      <div class="section-kicker"><span class="kicker-line"></span><span>YOUR BAG</span></div>
-      <h2 id="cart-title">ตะกร้าของคุณ</h2>
-      <div class="cart-items" id="cart-items"></div>
-      <div class="cart-summary"><span>รวมทั้งสิ้น</span><strong id="cart-total">฿0</strong></div>
-      <p class="workflow-note">โหมดสาธิต: ขั้นตอนถัดไปจะไม่เรียกเก็บเงินและไม่ส่งไฟล์</p>
-      <button class="button button-primary wide-button" id="checkout-button" type="button">ไปยังขั้นตอนสั่งซื้อ <span aria-hidden="true">→</span></button>
+    <dialog class="workflow-dialog public-profile-dialog" id="public-profile-dialog" aria-labelledby="public-profile-title">
+      <button class="dialog-close" type="button" data-close-dialog="public-profile-dialog" aria-label="ปิดโปรไฟล์ฟรีแลนซ์">×</button>
+      <div class="public-profile-head"><span class="public-profile-avatar" id="public-profile-avatar">M</span><div><div class="section-kicker"><span class="kicker-line"></span><span>FREELANCER PROFILE</span></div><h2 id="public-profile-title">โปรไฟล์ฟรีแลนซ์</h2><p id="public-profile-subtitle" class="workflow-note"></p></div></div>
+      <p id="public-profile-bio" class="public-profile-bio"></p>
+      <a id="public-profile-link" class="text-link" href="#" target="_blank" rel="noreferrer" hidden>ดูพอร์ตโฟลิโอภายนอก ↗</a>
+      <div class="public-profile-stats" id="public-profile-stats"></div>
+      <h3>บริการและผลงาน</h3>
+      <div id="public-profile-services" class="public-profile-services"></div>
     </dialog>
 
-    <dialog class="workflow-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
-      <button class="dialog-close" type="button" data-close-dialog="checkout-dialog" aria-label="ปิดหน้าสั่งซื้อ">×</button>
-      <div class="dialog-symbol" aria-hidden="true">✓</div>
-      <div class="section-kicker"><span class="kicker-line"></span><span>DEMO CHECKOUT</span></div>
-      <h2 id="checkout-title">ตรวจสอบคำสั่งซื้อ</h2>
-      <div id="checkout-summary"></div>
-      <p class="workflow-note">นี่เป็นการจำลองการสั่งซื้อเท่านั้น ไม่มีการขอข้อมูลบัตร ไม่มีการเรียกเก็บเงินจริง และไม่มีไฟล์ถูกส่ง</p>
-      <button class="button button-primary wide-button" id="confirm-order" type="button">ยืนยันคำสั่งซื้อจำลอง</button>
+    <dialog class="workflow-dialog inquiry-dialog" id="inquiry-dialog" aria-labelledby="inquiry-title">
+      <button class="dialog-close" type="button" data-close-dialog="inquiry-dialog" aria-label="ปิดฟอร์มติดต่อ">×</button>
+      <div class="dialog-symbol" aria-hidden="true">✉</div>
+      <div class="section-kicker"><span class="kicker-line"></span><span>CONTACT FREELANCER · DEMO</span></div>
+      <h2 id="inquiry-title">เริ่มคุยเรื่องงาน</h2>
+      <p class="workflow-note" id="inquiry-service-name"></p>
+      <p class="workflow-note auth-warning">ข้อความตัวอย่างจะบันทึกในเบราว์เซอร์นี้เท่านั้น ยังไม่มีการส่งอีเมลหรือแชตจริง</p>
+      <form id="inquiry-form" class="form-grid single-column">
+        <label>ชื่อของคุณ<input name="name" required maxlength="60" placeholder="ชื่อที่ให้ฟรีแลนซ์เรียก" /></label>
+        <label>อีเมลติดต่อ<input name="email" type="email" required maxlength="100" placeholder="you@example.com" /></label>
+        <label>รายละเอียดงาน<textarea name="message" rows="4" required maxlength="1000" placeholder="เล่าโจทย์ สิ่งที่ต้องการ และช่วงเวลาคร่าว ๆ"></textarea></label>
+        <button class="button button-primary form-full" type="submit">ส่งข้อความตัวอย่าง <span aria-hidden="true">↗</span></button>
+      </form>
     </dialog>
 
-    <dialog class="workflow-dialog" id="success-dialog" aria-labelledby="success-title">
-      <button class="dialog-close" type="button" data-close-dialog="success-dialog" aria-label="ปิดข้อความยืนยัน">×</button>
-      <div class="dialog-symbol success-symbol" aria-hidden="true">✦</div>
-      <div class="section-kicker"><span class="kicker-line"></span><span>DEMO ORDER COMPLETE</span></div>
-      <h2 id="success-title">บันทึกคำสั่งซื้อจำลองแล้ว</h2>
-      <p id="success-message">รายการนี้ถูกบันทึกในเบราว์เซอร์ของคุณเท่านั้น</p>
-      <button class="button button-primary wide-button" type="button" data-close-dialog="success-dialog">เรียบร้อย</button>
+    <dialog class="workflow-dialog chat-dialog" id="chat-dialog" aria-labelledby="chat-title">
+      <button class="dialog-close" type="button" data-close-dialog="chat-dialog" aria-label="ปิดบทสนทนา">×</button>
+      <div class="section-kicker"><span class="kicker-line"></span><span>PROJECT CONVERSATION · DEMO</span></div>
+      <h2 id="chat-title">พูดคุยเรื่องงาน</h2>
+      <p class="workflow-note" id="chat-subtitle"></p>
+      <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+      <form class="chat-composer" id="chat-form"><label class="visually-hidden" for="chat-message">พิมพ์ข้อความ</label><textarea id="chat-message" name="message" rows="2" required maxlength="1000" placeholder="พิมพ์ข้อความ..."></textarea><button class="button button-primary" type="submit">ส่ง</button></form>
+      <p class="workflow-note">แชตนี้จำลองการทำงานในเบราว์เซอร์เดียว</p>
     </dialog>
 
     <dialog class="workflow-dialog auth-dialog" id="auth-dialog" aria-labelledby="auth-title">
@@ -265,13 +274,12 @@
     <dialog class="workflow-dialog account-dialog" id="account-dialog" aria-labelledby="account-title">
       <button class="dialog-close" type="button" data-close-dialog="account-dialog" aria-label="ปิดบัญชี">×</button>
       <div class="account-heading"><div class="account-avatar" id="account-avatar">M</div><div><div class="section-kicker"><span class="kicker-line"></span><span>YOUR MADEBY</span></div><h2 id="account-title">บัญชีของคุณ</h2><p id="account-email" class="workflow-note"></p></div><button class="text-button sign-out-button" id="sign-out-button" type="button">ออกจากระบบ</button></div>
-      <p class="demo-ribbon">ข้อมูลบัญชีและคำสั่งซื้อเป็นข้อมูลจำลองที่เก็บในเบราว์เซอร์นี้</p>
+      <p class="demo-ribbon">บัญชี ข้อความ และรายการที่บันทึกเป็นข้อมูลตัวอย่างในเบราว์เซอร์นี้</p>
       <nav class="account-tabs" aria-label="เมนูบัญชี">
-        <button type="button" data-account-tab="overview" class="active" aria-selected="true">ภาพรวม</button><button type="button" data-account-tab="orders" aria-selected="false">คำสั่งซื้อ</button><button type="button" data-account-tab="downloads" aria-selected="false">ดาวน์โหลด</button><button type="button" data-account-tab="saved" aria-selected="false">บันทึกไว้</button><button type="button" data-account-tab="profile" aria-selected="false">โปรไฟล์</button>
+        <button type="button" data-account-tab="overview" class="active" aria-selected="true">ภาพรวม</button><button type="button" data-account-tab="messages" aria-selected="false">ข้อความ</button><button type="button" data-account-tab="saved" aria-selected="false">บันทึกไว้</button><button type="button" data-account-tab="profile" aria-selected="false">โปรไฟล์</button>
       </nav>
-      <section class="account-pane" id="account-pane-overview"><div class="account-stats"><div><strong id="account-saved-count">0</strong><span>รายการบันทึก</span></div><div><strong id="account-order-count">0</strong><span>คำสั่งซื้อจำลอง</span></div><div><strong id="account-download-count">0</strong><span>ไฟล์ตัวอย่าง</span></div></div><div class="account-history" id="account-history"></div><div class="account-actions"><button class="button button-primary" id="account-seller-action" type="button">สมัครเป็นผู้ขาย <span aria-hidden="true">↗</span></button><button class="button button-outline" id="open-admin-demo" type="button">แผงผู้ดูแล · Demo</button></div></section>
-      <section class="account-pane" id="account-pane-orders" hidden><h3>คำสั่งซื้อของคุณ</h3><div id="account-orders-list"></div></section>
-      <section class="account-pane" id="account-pane-downloads" hidden><h3>ไฟล์ที่ซื้อ</h3><p class="workflow-note">ลิงก์ดาวน์โหลดจริงจะเปิดหลังเชื่อมระบบชำระเงินและจัดเก็บไฟล์</p><div id="account-downloads-list"></div></section>
+      <section class="account-pane" id="account-pane-overview"><div class="account-stats"><div><strong id="account-saved-count">0</strong><span>ฟรีแลนซ์ที่บันทึก</span></div><div><strong id="account-message-count">0</strong><span>บทสนทนา</span></div><div><strong id="account-service-count">0</strong><span>บริการที่ดูได้</span></div></div><div class="account-history" id="account-history"></div><div class="account-actions"><button class="button button-primary" id="account-seller-action" type="button">สมัครเป็นฟรีแลนซ์ <span aria-hidden="true">↗</span></button><button class="button button-outline" id="open-admin-demo" type="button">แผงผู้ดูแล · Demo</button></div></section>
+      <section class="account-pane" id="account-pane-messages" hidden><h3>บทสนทนาของคุณ</h3><div id="account-inquiries-list"></div></section>
       <section class="account-pane" id="account-pane-saved" hidden><h3>รายการที่บันทึก</h3><div id="account-saved-list"></div></section>
       <section class="account-pane" id="account-pane-profile" hidden><h3>ข้อมูลโปรไฟล์</h3><p class="workflow-note">แก้ไขข้อมูลตัวอย่างซึ่งบันทึกอยู่ในเบราว์เซอร์นี้</p><form id="account-profile-form" class="form-grid"><label>ชื่อที่ใช้แสดง<input name="displayName" required maxlength="50" /></label><label>อีเมล<input name="email" type="email" required maxlength="100" /></label><button class="button button-primary form-full" type="submit">บันทึกโปรไฟล์</button></form></section>
       <button class="text-button danger-text" id="clear-demo-data" type="button">ล้างข้อมูลตัวอย่างในเบราว์เซอร์นี้</button>
@@ -287,8 +295,9 @@
           <label>ชื่อที่ใช้แสดง<input name="displayName" required maxlength="50" placeholder="เช่น Ploy Studio" /></label>
           <label>ชื่อร้าน<input name="storeName" required maxlength="50" placeholder="ชื่อร้านหรือสตูดิโอ" /></label>
           <label>อีเมลสำหรับติดต่อ<input name="email" type="email" required maxlength="100" placeholder="you@example.com" /></label>
+          <label class="form-full">แนะนำตัวสั้น ๆ <span class="optional-label">ช่วยให้ลูกค้ารู้จักคุณ</span><textarea name="bio" rows="3" maxlength="400" placeholder="ทักษะ ประสบการณ์ และสไตล์การทำงาน"></textarea></label>
           <label>ลิงก์ผลงาน <span class="optional-label">ไม่บังคับ</span><input name="portfolio" type="url" placeholder="https://..." /></label>
-          <label class="form-full">หมวดหลัก<select name="category" required><option value="uxui">UX/UI Design</option><option value="web">Web Design</option><option value="template">Templates</option><option value="product">Product & Startup</option><option value="idea">Project Ideas</option><option value="dev">Dev Tools</option></select></label>
+          <label class="form-full">หมวดหลัก<select name="category" required><option value="uxui">UX/UI Design</option><option value="web">Web & App Design</option><option value="template">Branding & Graphic</option><option value="product">Product Consulting</option><option value="idea">IT & Startup Ideas</option><option value="dev">Development</option></select></label>
           <label class="checkbox-label form-full"><input name="agree" type="checkbox" required /><span>ฉันเข้าใจว่านี่คือต้นแบบและไม่มีการส่งข้อมูลหรือเปิดร้านจริง</span></label>
           <button class="button button-primary form-full" type="submit">สร้างหน้าร้านตัวอย่าง <span aria-hidden="true">↗</span></button>
         </form>
@@ -296,22 +305,21 @@
       <div class="seller-dashboard" id="seller-dashboard" hidden>
         <div class="section-kicker"><span class="kicker-line"></span><span>YOUR CREATOR SPACE</span></div>
         <h2 id="seller-store-title">หน้าร้านของคุณ</h2>
-        <p class="workflow-note">จัดการร้านและรายการตัวอย่าง ยอดขายจะแสดงจากคำสั่งซื้อจำลองในเบราว์เซอร์นี้</p>
-        <div class="seller-metrics"><div><span>ผลงานทั้งหมด</span><strong id="seller-product-count">0</strong></div><div><span>ยอดขายจำลอง</span><strong id="seller-sales-total">฿0</strong></div><div><span>คำสั่งซื้อ</span><strong id="seller-order-count">0</strong></div></div>
-        <nav class="seller-tabs" aria-label="เมนูจัดการร้าน"><button type="button" class="active" data-seller-tab="products">ผลงาน</button><button type="button" data-seller-tab="sales">คำสั่งซื้อ</button><button type="button" data-seller-tab="payouts">รายรับ</button><button type="button" data-seller-tab="store">ข้อมูลร้าน</button></nav>
-        <section class="seller-pane" id="seller-pane-products"><div class="seller-dashboard-bar"><span>รายการผลงานและสถานะตรวจสอบ</span><button class="button button-primary" id="add-product-button" type="button">＋ เพิ่มผลงาน</button></div><div class="seller-product-list" id="seller-product-list"></div></section>
-        <section class="seller-pane" id="seller-pane-sales" hidden><h3>คำสั่งซื้อจากสินค้าของร้าน</h3><div id="seller-order-list"></div></section>
-        <section class="seller-pane" id="seller-pane-payouts" hidden><h3>สรุปรายรับตัวอย่าง</h3><div class="payout-card"><span>ยอดขายจำลองรวม</span><strong id="seller-payout-total">฿0</strong><p>ยังไม่มีการเชื่อมระบบค่าธรรมเนียม บัญชีรับเงิน หรือรอบโอนเงินจริง</p></div><div class="history-empty">รายการโอนเงินให้ผู้ขายจะแสดงหลังเชื่อมผู้ให้บริการชำระเงิน</div></section>
-        <section class="seller-pane" id="seller-pane-store" hidden><div class="store-profile-card"><span>ข้อมูลร้านตัวอย่าง</span><strong id="seller-profile-name"></strong><small id="seller-profile-email"></small><a id="seller-profile-link" href="#" target="_blank" rel="noreferrer" hidden>เปิดลิงก์ผลงาน ↗</a><button class="text-button" id="edit-seller-profile" type="button">แก้ไขข้อมูลร้าน</button></div></section>
+        <p class="workflow-note">จัดการโปรไฟล์ บริการ และข้อความจากลูกค้าในโหมดตัวอย่างนี้</p>
+        <div class="seller-metrics"><div><span>บริการทั้งหมด</span><strong id="seller-product-count">0</strong></div><div><span>ข้อความจากลูกค้า</span><strong id="seller-inquiry-count">0</strong></div><div><span>รายการที่ลูกค้าบันทึก</span><strong id="seller-favorite-count">0</strong></div></div>
+        <nav class="seller-tabs" aria-label="เมนูจัดการร้าน"><button type="button" class="active" data-seller-tab="products">บริการ</button><button type="button" data-seller-tab="inbox">ข้อความ</button><button type="button" data-seller-tab="store">โปรไฟล์</button></nav>
+        <section class="seller-pane" id="seller-pane-products"><div class="seller-dashboard-bar"><span>บริการและสถานะตรวจสอบ</span><button class="button button-primary" id="add-product-button" type="button">＋ เพิ่มบริการ</button></div><div class="seller-product-list" id="seller-product-list"></div></section>
+        <section class="seller-pane" id="seller-pane-inbox" hidden><h3>ข้อความจากลูกค้า</h3><div id="seller-inquiry-list"></div></section>
+        <section class="seller-pane" id="seller-pane-store" hidden><div class="store-profile-card"><span>โปรไฟล์ฟรีแลนซ์ตัวอย่าง</span><strong id="seller-profile-name"></strong><small id="seller-profile-email"></small><p id="seller-profile-bio"></p><a id="seller-profile-link" href="#" target="_blank" rel="noreferrer" hidden>เปิดลิงก์ผลงาน ↗</a><button class="text-button" id="edit-seller-profile" type="button">แก้ไขข้อมูลโปรไฟล์</button></div></section>
       </div>
     </dialog>
 
     <dialog class="workflow-dialog admin-dialog" id="admin-dialog" aria-labelledby="admin-title">
       <button class="dialog-close" type="button" data-close-dialog="admin-dialog" aria-label="ปิดแผงผู้ดูแล">×</button>
       <div class="section-kicker"><span class="kicker-line"></span><span>ADMIN WORKSPACE · DEMO MODE</span></div><h2 id="admin-title">แผงผู้ดูแลระบบ</h2>
-      <p class="workflow-note">หน้าจอนี้จำลองการตรวจรายการสินค้าเท่านั้น การใช้งานจริงต้องจำกัดสิทธิ์ฝั่งเซิร์ฟเวอร์</p>
-      <div class="admin-stats"><div><strong id="admin-pending-count">0</strong><span>รอตรวจ</span></div><div><strong id="admin-published-count">0</strong><span>เผยแพร่แล้ว</span></div><div><strong id="admin-report-count">0</strong><span>เรื่องที่เปิดอยู่</span></div></div>
-      <div class="admin-tabs"><button type="button" class="active" data-admin-tab="moderation">ตรวจสินค้า</button><button type="button" data-admin-tab="reports">ข้อร้องเรียน</button></div>
+      <p class="workflow-note">ต้นแบบสำหรับตรวจบริการและรับรายงาน การใช้งานจริงต้องจำกัดสิทธิ์ผู้ดูแลจากฝั่งเซิร์ฟเวอร์</p>
+      <div class="admin-stats"><div><strong id="admin-pending-count">0</strong><span>รอตรวจ</span></div><div><strong id="admin-published-count">0</strong><span>เปิดรับงาน</span></div><div><strong id="admin-report-count">0</strong><span>เรื่องที่เปิดอยู่</span></div></div>
+      <div class="admin-tabs"><button type="button" class="active" data-admin-tab="moderation">ตรวจบริการ</button><button type="button" data-admin-tab="reports">รายงานปัญหา</button></div>
       <section id="admin-pane-moderation" class="admin-pane"><div id="admin-product-queue"></div></section>
       <section id="admin-pane-reports" class="admin-pane" hidden><div id="admin-report-queue"></div><p class="workflow-note">รายงานเป็นข้อมูลตัวอย่างในเบราว์เซอร์นี้ ยังไม่มีการแจ้งเตือนหรือส่งต่อทีมงาน</p></section>
     </dialog>
@@ -319,27 +327,26 @@
     <dialog class="workflow-dialog help-dialog" id="help-dialog" aria-labelledby="help-title">
       <button class="dialog-close" type="button" data-close-dialog="help-dialog" aria-label="ปิดข้อมูลช่วยเหลือ">×</button>
       <div class="section-kicker"><span class="kicker-line"></span><span>HELP & POLICIES · SAMPLE</span></div><h2 id="help-title">ข้อมูลสำหรับผู้ใช้</h2>
-      <nav class="help-tabs" aria-label="ข้อมูลช่วยเหลือ"><button type="button" data-help-page="buying">วิธีซื้อ</button><button type="button" data-help-page="terms">ข้อกำหนด</button><button type="button" data-help-page="license">ลิขสิทธิ์</button><button type="button" data-help-page="privacy">ความเป็นส่วนตัว</button><button type="button" data-help-page="refund">คืนเงิน</button><button type="button" data-help-page="contact">ติดต่อ</button></nav>
+      <nav class="help-tabs" aria-label="ข้อมูลช่วยเหลือ"><button type="button" data-help-page="hiring">วิธีจ้างงาน</button><button type="button" data-help-page="terms">ข้อกำหนด</button><button type="button" data-help-page="license">ลิขสิทธิ์</button><button type="button" data-help-page="privacy">ความเป็นส่วนตัว</button><button type="button" data-help-page="safety">ความปลอดภัย</button><button type="button" data-help-page="contact">ติดต่อ</button></nav>
       <section class="help-content" id="help-content"></section>
     </dialog>
 
     <dialog class="workflow-dialog" id="product-form-dialog" aria-labelledby="product-form-title">
-      <button class="dialog-close" type="button" data-close-dialog="product-form-dialog" aria-label="ปิดฟอร์มสินค้า">×</button>
-      <div class="section-kicker"><span class="kicker-line"></span><span>PRODUCT LISTING</span></div>
-      <h2 id="product-form-title">เพิ่มผลงาน</h2>
-      <p class="workflow-note">รายการใหม่จะเข้าคิวตรวจสอบในโหมด Demo รูปที่เลือกจะแสดงเป็นภาพปกเฉพาะในเบราว์เซอร์นี้</p>
+      <button class="dialog-close" type="button" data-close-dialog="product-form-dialog" aria-label="ปิดฟอร์มบริการ">×</button>
+      <div class="section-kicker"><span class="kicker-line"></span><span>FREELANCE SERVICE</span></div>
+      <h2 id="product-form-title">เพิ่มบริการ</h2>
+      <p class="workflow-note">บริการใหม่จะเข้าคิวตรวจสอบ รูปผลงานจะเก็บไว้ในเบราว์เซอร์นี้และไม่อัปโหลดขึ้นระบบ</p>
       <form id="product-form" class="form-grid">
-        <label class="form-full">ชื่อผลงาน<input name="title" required maxlength="80" placeholder="เช่น Calm Dashboard UI Kit" /></label>
-        <label>หมวดหมู่<select name="category" required><option value="uxui">UX/UI Design</option><option value="web">Web Design</option><option value="template">Templates</option><option value="product">Product & Startup</option><option value="idea">Project Ideas</option><option value="dev">Dev Tools</option></select></label>
-        <label>ราคา (บาท)<input name="price" type="number" min="0" max="100000" step="1" required placeholder="390" /></label>
-        <label>รูปแบบไฟล์<input name="fileType" required maxlength="50" placeholder="เช่น Figma, PDF, Notion" /></label>
-        <label>เครื่องมือที่ใช้<input name="tools" maxlength="80" placeholder="เช่น Figma, Notion" /></label>
-        <label class="form-full">ภาพปกตัวอย่าง <span class="optional-label">PNG, JPG หรือ WebP · ไม่เกิน 8 MB</span><input name="cover" id="product-cover" type="file" accept="image/png,image/jpeg,image/webp" /></label>
-        <div class="cover-preview form-full" id="cover-preview" hidden><img id="cover-preview-image" alt="ตัวอย่างภาพปกสินค้า" /><button class="text-button" type="button" id="remove-cover">นำภาพออก</button></div>
-        <label class="form-full">ไฟล์สินค้าสำหรับแสดงตัวอย่าง <span class="optional-label">เก็บเฉพาะชื่อและขนาดไฟล์ ไม่อัปโหลดไฟล์</span><input name="assets" id="product-assets" type="file" multiple accept=".zip,.pdf,.fig,.figma,.sketch,.xd,.psd,.svg,.png,.jpg,.webp,.json,.md,.txt" /></label>
-        <div class="selected-assets form-full" id="selected-assets" aria-live="polite"><span>ยังไม่ได้เลือกไฟล์</span><button class="text-button" type="button" id="clear-assets">ล้างรายการไฟล์</button></div>
-        <label class="form-full">รายละเอียด<textarea name="description" rows="3" required maxlength="500" placeholder="อธิบายว่าผลงานนี้ช่วยอะไรและเหมาะกับใคร"></textarea></label>
-        <button class="button button-primary form-full" type="submit">บันทึกรายการตัวอย่าง <span aria-hidden="true">✓</span></button>
+        <label class="form-full">ชื่อบริการ<input name="title" required maxlength="80" placeholder="เช่น ออกแบบ UX/UI สำหรับเว็บและแอป" /></label>
+        <label>หมวดหมู่<select name="category" required><option value="uxui">UX/UI Design</option><option value="web">Web & App Design</option><option value="template">Branding & Graphic</option><option value="product">Product Consulting</option><option value="idea">IT & Startup Ideas</option><option value="dev">Development</option></select></label>
+        <label>ราคาเริ่มต้น (บาท)<input name="price" type="number" min="0" max="100000" step="100" required placeholder="1,500" /></label>
+        <label class="form-full">สิ่งที่ลูกค้าจะได้รับ<input name="fileType" required maxlength="100" placeholder="เช่น UX flow, wireframe และ UI 5 หน้าจอ" /></label>
+        <label>เครื่องมือ/ทักษะ<input name="tools" maxlength="80" placeholder="เช่น Figma, React, Webflow" /></label>
+        <label>ระยะเวลาโดยประมาณ<input name="duration" maxlength="40" placeholder="เช่น 5–7 วัน" /></label>
+        <label class="form-full">ภาพผลงานตัวอย่าง <span class="optional-label">PNG, JPG หรือ WebP · ไม่เกิน 8 MB</span><input name="cover" id="product-cover" type="file" accept="image/png,image/jpeg,image/webp" /></label>
+        <div class="cover-preview form-full" id="cover-preview" hidden><img id="cover-preview-image" alt="ตัวอย่างภาพผลงาน" /><button class="text-button" type="button" id="remove-cover">นำภาพออก</button></div>
+        <label class="form-full">รายละเอียดและขอบเขตงาน<textarea name="description" rows="3" required maxlength="500" placeholder="อธิบายขั้นตอนทำงาน ขอบเขต และบริการนี้เหมาะกับใคร"></textarea></label>
+        <button class="button button-primary form-full" type="submit">ส่งบริการเข้าตรวจ <span aria-hidden="true">✓</span></button>
       </form>
     </dialog>
   </body>
